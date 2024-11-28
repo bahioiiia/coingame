@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Collector Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Верхня секція з монетами -->
+      <div id="coins">
+        <img src="img/2e.jpg" data-value="200" alt="2€" />
+        <img src="img/1e.jpg" data-value="100" alt="1€" />
+        <img src="img/50.jpg" data-value="50" alt="50¢" />
+        <img src="img/20.jpg" data-value="20" alt="20¢" />
+        <img src="img/10.jpg" data-value="10" alt="10¢" />
+        <img src="img/5.jpg" data-value="5" alt="5¢" />
+        <img src="img/2.jpg" data-value="2" alt="2¢" />
+        <img src="img/1.jpg" data-value="1" alt="1¢" />
+      </div>
+    </div>
+
+    <div class="center">
+      <!-- Центральна секція -->
+      <div>
+        <h2>Випадкова сума: <span id="target-amount"></span>€</h2>
+        <h2>Поточна сума: <span id="current-amount"></span>€</h2>
+        <button id="reset-button">Заново</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!-- Нижня секція для вибраних монет -->
+      <div id="selected-coins">
+        <div id="200-column" class="coin-column">2€</div>
+        <div id="100-column" class="coin-column">1€</div>
+        <div id="50-column" class="coin-column">50¢</div>
+        <div id="20-column" class="coin-column">20¢</div>
+        <div id="10-column" class="coin-column">10¢</div>
+        <div id="5-column" class="coin-column">5¢</div>
+        <div id="2-column" class="coin-column">2¢</div>
+        <div id="1-column" class="coin-column">1¢</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

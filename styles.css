@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header,
+.center,
+.footer {
+    padding: 5px;
+}
+
+#coins img {
+    width: 50px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#selected-coins {
+    display: flex;
+    justify-content: center;
+}
+
+.coin-column {
+    margin: 0px;
+    width: 50px;
+}
+
+.coin-column img {
+    width: 50px;
+    margin: 0px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
