@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Генерація випадкової суми
     function generateTargetAmount() {
-        targetAmount = (Math.floor(Math.random() * 1000) + 1) / 100;
+        targetAmount = (Math.floor(Math.random() * 100) + 1) / 100;
         targetAmountElement.textContent = targetAmount.toFixed(2);
         updateCurrentAmount();
     }
