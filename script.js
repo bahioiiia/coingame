@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Генерація випадкової суми
     function generateTargetAmount() {
-        targetAmount = Math.floor(Math.random() * 500) + 1;;
+        targetAmount = Math.floor(Math.random() * 500) + 1;
         targetAmountElement.textContent = (targetAmount/100).toFixed(2);
         updateCurrentAmount();
     }
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     resetButton.addEventListener('click', function() {
         currentAmount = 0;
         document.querySelectorAll('.coin-column').forEach(column => {
-            column.innerHTML = column.getAttribute('id').replace('-column', '');
+            column.innerHTML = column.getAttribute('id').replace('-column', '¢');
         });
         generateTargetAmount();
     });
