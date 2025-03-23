@@ -9,18 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Генерація випадкової суми
     function generateTargetAmount() {
-        targetAmount = (Math.floor(Math.random() * 100) + 1) / 100;
-        targetAmountElement.textContent = targetAmount.toFixed(2);
+        targetAmount = Math.floor(Math.random() * 500) + 1;;
+        targetAmountElement.textContent = (targetAmount/100).toFixed(2);
         updateCurrentAmount();
     }
 
     // Оновлення поточної суми
     function updateCurrentAmount() {
-        currentAmountElement.textContent = (currentAmount / 100).toFixed(2);
-        if (currentAmount === targetAmount * 100) {
+        currentAmountElement.textContent = (currentAmount/100).toFixed(2);
+        if (currentAmount === targetAmount) {
             currentAmountElement.classList.add('green');
             currentAmountElement.classList.remove('red');
-        } else if (currentAmount > targetAmount * 100) {
+        } else if (currentAmount > targetAmount) {
             currentAmountElement.classList.add('red');
             currentAmountElement.classList.remove('green');
         } else {
